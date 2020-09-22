@@ -1,0 +1,1 @@
+export const CHANGE_LOGIN_STATE = 'CHAGE_LOGIN_STATE';
