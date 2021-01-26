@@ -21,14 +21,14 @@ export default function TabNavigator() {
       activeColor="#4285f7"
       inactiveColor="gary"
       shifting={false}
-      barStyle={{backgroundColor: '#eee',height: 80}}>
+      barStyle={{backgroundColor: '#eee', height: 60}}>
       <Tab.Screen
         name="Home"
         component={Home}
         options={{
           tabBarLabel: '首页',
           tabBarIcon: ({color}) => (
-            <MaterialCommunityIcons name="home" color={color} size={30}  />
+            <MaterialCommunityIcons name="home" color={color} size={30} />
           ),
         }}
       />

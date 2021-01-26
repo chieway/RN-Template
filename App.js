@@ -8,14 +8,16 @@ import store from './src/store';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
-const App: () => React$Node = () => {
+const App = () => {
   return (
     <Provider store={store}>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaProvider style={styles.container}>
-        <NavigationContainer>
-          <StackNavigator />
-        </NavigationContainer>
+      <SafeAreaProvider>
+        <SafeAreaView style={styles.container}>
+          <NavigationContainer>
+            <StackNavigator />
+          </NavigationContainer>
+        </SafeAreaView>
       </SafeAreaProvider>
     </Provider>
   );

@@ -16,6 +16,7 @@ function InitScreen() {
         component={Login}
         options={{
           title: 'Login',
+          headerShown: false,
         }}
       />
     </Stack.Navigator>
